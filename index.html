@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <script href="./js.js" defer></script>
+    <title>Hamburgueria</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+          <div class="div">
+            <img src='./burguer-icon.png' alt="Imagem de logo" />
+          </div>
+          <div class="circles">
+            <img src='./bolos.png' alt="Circulos decorativos" />
+          </div>
+        </div>
+        <div class="container2">
+             <div class="container">
+            <div class="mr">
+                <div class="header">
+                    <h2>Cadastro</h2>
+                    <a href="./login.html">Voltar ao login</a>
+                </div>
+                <form onSubmit="modal()">
+                    <fieldset>
+                        <legend>Nome</legend>
+                        <input type="text" minlength="3" maxlength="100" required/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" minlength="5" maxlength="120" required/>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Senha</legend>
+                        <input type="password" minlength="6" maxlength="100" required />
+                    </fieldset>
+
+                    <div class="button">
+                        <div class="button_1">
+                            <button>Criar conta</button>
+                        </div>
+                        <p>Já tem conta? Faça login para matar sua fome!</p>    
+                        <div class="button_2">
+                        <button><a href="./login.html">Voltar ao login</a></button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal hidden">
+        <div class="modal-2">
+            <p>Cadastrado com sucesso!</p>
+        </div>
+    </div>
+</body>
+</html>
